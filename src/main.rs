@@ -3,7 +3,7 @@ use actix_web::{web, App, HttpResponse, HttpServer, Responder};
 async fn upload() -> impl Responder {
     HttpResponse::Ok().body("Hi, na?!")
 }
-async fn download(info: web::Path<(String)>) -> HttpResponse {
+async fn download(info: web::Path<String>) -> HttpResponse {
     HttpResponse::Ok().body("Wat willst du denn hier?")
 }
 
